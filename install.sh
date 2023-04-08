@@ -5,6 +5,10 @@ set -e
 # OS: Raspbian GNU/Linux 10 (buster)
 # Model: Raspberry Pi 3 Model B Rev 1.2
 
+# This script has been tested on 2023/04/08
+# OS: Raspberry Pi OS GNU/Linux 11 (bullseye)
+# Model: Raspberry Pi 4 Model B Rev 1.4
+
 echo "Installing dependencies..."
 apt-get update
 apt-get --yes --force-yes install git bluez python3 python3-cffi python3-dbus python3-alsaaudio python-configparser sound-theme-freedesktop vorbis-tools
