@@ -9,6 +9,12 @@ set -e
 # OS: Raspberry Pi OS GNU/Linux 11 (bullseye)
 # Model: Raspberry Pi 4 Model B Rev 1.4
 
+echo "Describing system..."
+echo "Hardware: " && cat /proc/device-tree/model && echo
+echo "Kernel  : " && uname -r
+echo "Archit. : " && uname -m
+echo "OS      : " && lsb_release -irdc
+
 echo "Installing dependencies..."
 apt-get update
 apt-get --yes --force-yes install git bluez python3 python3-cffi python3-dbus python3-alsaaudio python-configparser sound-theme-freedesktop vorbis-tools
